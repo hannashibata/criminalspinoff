@@ -92,7 +92,8 @@ p {
 
 /* LINKS */
 a {
-    color: rgb(255 0 200 / .9);
+    color: black;
+    cursor: pointer;
     text-decoration: none;
 }
 a:hover {
@@ -132,34 +133,35 @@ img {
 form input[type=submit] {
     font-size: inherit;
     line-height: 1;
-    border: 1px solid rgb(255 0 200 /1);
-    background-color: rgb(255 0 200 / 1);
-    color: rgb(255 255 255 /1);
+    border: 2px solid #ff342c;
+    background-color: #ff342c;
+    color: black;
     padding: 1em;
     margin: .5em .5em .5em 0;
     display: inline-block;
     text-align: center;
-    border-radius: 0.5em;
+    text-transform: uppercase;
+    border-radius: 0.1em;
 }
 
 .button:hover,
 form input[type=submit]:hover {
-    border: 1px solid rgb(205 5 162 /1);
-    background-color: rgb(205 5 162 /1);
-    color: rgb(255 255 255 /0.8);
+    border: 2px solid #ff342c;
+    background-color: rgb(0 0 0 /0);
+    color: #ff342c;
     text-decoration: none;
 }
 
 .button.alt {
-    border: 1px solid rgb(255 0 200 /1);
-    background: transparent;
-    color: rgb(255 0 200 /1);
+    border: 2px solid #FED6CE;
+    background-color: #FED6CE;
+    color: black;
 }
 
 .button.alt:hover {
-    border: 1px solid rgb(205 5 162 /1);
-    background: rgb(205 5 162 /1);
-    color: rgb(255 255 255 /.8);
+    border: 2px solid #FED6CE;
+    background-color: rgb(0 0 0 /0);
+    color: #FED6CE;
 }
 
 /* LAYOUT */
