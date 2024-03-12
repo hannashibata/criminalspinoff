@@ -43,7 +43,7 @@ body {
     font-size: 87.5%;   /* 14px */
     font-family: Helvetica, Arial, sans-serif;
     line-height: 1.5;  /* 14px x 1.5 = 21px */
-    color: rgb(0 0 0 /.8);
+    color: black;
 } 
 
 /* HEADINGS
@@ -333,6 +333,7 @@ body.demo::before {
     list-style: none;
     display: flex;
     justify-content: center;
+    text-transform: uppercase;
 }
 
 .site-nav a {
@@ -352,7 +353,7 @@ section {
 .hero {
     padding: 6em 4%;
     background-color: rgb(0 0 0 /.1);
-    text-align: center;
+    text-align: right;
 }
 
 .hero h1,
