@@ -164,6 +164,13 @@ form input[type=submit]:hover {
     color: #FED6CE;
 }
 
+.button-price {
+    background-color: green;
+    /* font-family:  */
+    font-size: 1em;    /* 16px / 16px = 1em same as h6*/
+    line-height: 1.5;
+}
+
 /* LAYOUT */
 
 /* SIMPLE RESET */
