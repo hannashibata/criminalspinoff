@@ -296,6 +296,7 @@ body.demo::before {
 /* SITE HEADER */
 .site-header {
     padding: 1em 0;
+    position: absolute;
 }
 
 /* PLACE SITE-ID LEFT AND NAV RIGHT ON LARGER SCREENS */
@@ -309,7 +310,7 @@ body.demo::before {
 /* STYYLING FOR BOTH HEADER AND FOOTER */
 .site-header a,
 .site-footer a {
-    color: rgb(0 0 0 /.8);
+    color:  black;
 }
 
 .site-header a:hover,
@@ -512,7 +513,7 @@ form input[type=submit] {
 
 /* CUSTOM SITE CSS */
 .section-title {
-    text-align: center;
+    text-align: left;
     margin-bottom: 2em;
 }
 
