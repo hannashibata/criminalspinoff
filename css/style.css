@@ -524,13 +524,13 @@ form input[type=submit] {
     border-bottom: 3px solid rgb(0 0 0 /.2)
 }
 
-.site-header.sticky {
+.site-header.fixed {
     position: fixed;
     width: 100%;
     background-color: white;
 }
 
-.site-header.sticky + main {
+.site-header.fixed + main {
     padding-top: 3em;
 }
 
