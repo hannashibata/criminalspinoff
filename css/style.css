@@ -90,6 +90,11 @@ p {
     max-width: 38em;
 }
 
+blockquote footer {
+    font-weight: 800; 
+    text-align: right;
+}
+
 /* LINKS */
 a {
     color: black;
@@ -164,10 +169,15 @@ form input[type=submit]:hover {
     color: #FED6CE;
 }
 
+.button-text {
+    /* background-color: green; */
+    font-size: 75%;    /* 12px */
+    line-height: 1.5;
+}
+
 .button-price {
     background-color: green;
-    /* font-family:  */
-    font-size: 1em;    /* 16px / 16px = 1em same as h6*/
+    font-size: 100%;    /* 12px */
     line-height: 1.5;
 }
 
@@ -429,107 +439,13 @@ section {
 }
 
 /* SUB PAGES */
-article {
-    max-width: 38em;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-article h1, 
-article h1 + .subhead, 
-article .date {
-    text-align: center;
-} 
-
-article h2.subhead {
-    font-size: 1.5em;
-    line-height: 1.25;
-}
-
-article .subhead {
-    font-weight: normal;
-    opacity: .7;
-}
-
-article .date {
-    font-size: .75em;
-    opacity: .5;
-    margin-bottom: 3em;
-}
-
-article p + h1,
-article p + h2, 
-article p + h3,
-article p + h4,
-article p + h5,
-article p + h6 {
-    margin-top: 1.5em;
-}
-
-/* article p:first-of-type {
-    font-size: 1.4em;
-    line-height: 1.3em;
-} */
-
-article p:first-of-type:first-letter {
-    font-size: 3em;
-    line-height: 1em;
-    background: #000;
-    color: #fff;
-    padding: .2em .4em;
-    margin-right: .2em;
-    margin-bottom: 0;
-    float: left;
-}
 
 /* FORMS */
-form {
-    max-width: 38em;
-    margin: 2em auto;
-}
-
-form label,
-form input,
-form textarea {
-    display: block;
-    width: 100%;
-    font: 1em;
-}
-
-form label {
-    margin-top: 1.5em;
-    margin-bottom: .2em;
-}
-
-form input[type=text],
-form textarea {
-    border: 1px solid #ccc;
-    padding: .25em;
-    color: #666;
-}
-
-form textarea {
-    min-height: 10em;
-    line-height: 1.5;
-}
-
-form input[type=submit] {
-    margin-top: 1.5em;
-    width: auto;
-}
 
 /* CUSTOM SITE CSS */
 .section-title {
     text-align: left;
-    margin-bottom: 2em;
-}
-
-.section-title::after {
-    content: "";
-    display: block;
-    width: 10%;
-    margin: .5em auto;
-    border-bottom: 3px solid rgb(0 0 0 /.2)
+    margin-bottom: 1em;
 }
 
 .site-header.fixed {
@@ -546,8 +462,9 @@ form input[type=submit] {
     background: rgb(0 0 0 /.05);
 }
 
-#contact {
-    background: rgb(0 0 0 /.1);
+.yellow-box {
+    background-color: #fdcd2e;
+    padding: 1.5em;
 }
 
 /* VERTICAL MEDIA QUERY add height/paddint to ottom of contact section only for lg screens */
