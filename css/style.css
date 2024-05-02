@@ -260,6 +260,7 @@ form input[type=submit]:hover {
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     padding-left: 0.2em;
+    outline: none;
 }
 
 /* BUTTONS with SPANS inside */
@@ -466,8 +467,8 @@ img {
 
 #site-footer .footer-nav li {
     margin: 0;
-    padding: 4em 1em;
     text-align: center;
+    padding: 2em 1em;
 }
 
 @media (min-width: 767px) {
@@ -475,6 +476,7 @@ img {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 2fr;
         align-items: center;
+        padding: 4em 1em;
     }
 
     #site-footer .footer-nav li:last-child {
@@ -624,6 +626,7 @@ section {
 }
 
 /* ANIMATION AND FEATURED CHARACTERS */
+/* styling and layout for featured characters with blurbs */
 .feature {
     font-size: 1rem;
     max-width: 240px;
@@ -654,10 +657,6 @@ section {
 
     .animation {
         margin-top: -4em;
-    }
-
-    .anim-paramedics {
-
     }
 
     .anim-palace {
@@ -713,25 +712,82 @@ section {
 }
 
 /* SCROLL TRIGGER ANIMATION (JS) */
-[data-sectionstate="active"] .feature-john {
-    animation: animation-john 1s ease-out forwards;
+/* gif animation */
+[data-sectionstate="active"] .anim-paramedics {
+    animation: anim-paramedics 1s ease-out forwards;
+}
 
+[data-sectionstate="active"] .anim-lavender {
+    animation: anim-lavender 1s ease-out forwards;
+}
+
+[data-sectionstate="active"] .anim-palace {
+    animation: anim-palace 1s ease-out forwards;
+}
+
+/* featured characters with blurbs */
+[data-sectionstate="active"] .feature-john {
+    animation: anim-john 1s ease-out forwards;
 }
 
 [data-sectionstate="active"] .feature-kevin {
-    animation: animation-kevin 2s ease-out forwards;
+    animation: anim-kevin 2s ease-out forwards;
 }
 
 [data-sectionstate="active"] .feature-helen {
-    animation: animation-helen 1s ease-out forwards;
+    animation: anim-helen 2s ease-out forwards;
 }
 
 [data-sectionstate="active"] .feature-benjamin {
-    animation: animation-benjamin 2s ease-out forwards;
+    animation: anim-benjamin 2s ease-out forwards;
+}
+
+/* white boxes in the about section */
+[data-sectionstate="active"] .testimonials {
+    animation: anim-testimonials 2s ease-out forwards;
+}
+
+[data-sectionstate="active"] .white-box.about {
+    animation: anim-about 2s ease-out forwards;
 }
 
 /* ANIMATION (CSS) */
-@keyframes animation-john {
+/* gif animations for each books */
+@keyframes anim-paramedics {
+    0% {
+        transform: translateX(-10px) translateY(0);
+        opacity: 0;
+        }
+    100% {
+        transform: translateX(0) translateY(0);
+        opacity: 1;
+        } 
+}
+
+@keyframes anim-lavender {
+    0% {
+        transform: translateX(-10px) translateY(0);
+        opacity: 0;
+        }
+    100% {
+        transform: translateX(0) translateY(0);
+        opacity: 1;
+        } 
+}
+
+@keyframes anim-palace {
+    0% {
+        transform: translateX(-10px) translateY(0);
+        opacity: 0;
+        }
+    100% {
+        transform: translateX(0) translateY(0);
+        opacity: 1;
+        } 
+}
+
+/* animations for each characters with speach bubbles */
+@keyframes anim-john {
     0% {
         transform: translateX(10px) translateY(-15px);
         opacity: 0;
@@ -744,7 +800,7 @@ section {
         } 
 }
 
-@keyframes animation-kevin {
+@keyframes anim-kevin {
     0% {
         transform: translateX(-20px) translateY(20px);
         opacity: 0;
@@ -757,7 +813,7 @@ section {
         } 
 }
 
-@keyframes animation-helen {
+@keyframes anim-helen {
     0% {
         transform: translateX(-20px) translateY(20px);
         opacity: 0;
@@ -770,7 +826,7 @@ section {
         } 
 }
 
-@keyframes animation-benjamin {
+@keyframes anim-benjamin {
     0% {
         transform: translateX(-20px) translateY(10px);
         opacity: 0;
@@ -780,6 +836,19 @@ section {
             transform: translateX(0) translateY(0);
             opacity: 1;
             /* rotate: 0; */
+        } 
+}
+
+/* textboxes from about section */
+/* but not working */
+@keyframes anim-testimonials {
+    0% {
+        transform: translateX(-10px) translateY(0);
+        opacity: 0;
+        }
+    100% {
+        transform: translateX(0) translateY(0);
+        opacity: 1;
         } 
 }
 
@@ -1014,8 +1083,8 @@ section {
     border: 1px solid rgb(0 0 0 /.1);
     color: rgb(0 0 0 /.5);
 } */
-/* 
-body * {
+
+/* body * {
     background-color: rgb(0 255 0 /.05);
     border: 1px solid rgb(0 255 0 /.1);
     color: rgb(0 255 0 /.5);
